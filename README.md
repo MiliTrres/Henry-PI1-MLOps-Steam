@@ -45,8 +45,17 @@ se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el
 > Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [ETL](/ETL.ipynb)
 
 ### Feature Engineering
+![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
+![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
+![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
+![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
+![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
+![Beautiful Soup](https://img.shields.io/badge/Beautiful%20Soup-333333?style=flat&logo=beautiful)
+![TextBlob](https://img.shields.io/badge/TextBlob-333333?style=flat&logo=textblob)
 
-La ingeniería de características se centró en el análisis de sentimientos de los comentarios de los usuarios, usando la librería TextBlob. Además, se prepararon los conjuntos de datos necesarios para optimizar las consultas y funcionalidades del servicio en la nube.
+La ingeniería de características se centró en el análisis de sentimientos de los comentarios de los usuarios, usando la librería TextBlob. 
+
+Además, se prepararon los conjuntos de datos necesarios para optimizar las consultas y funcionalidades del servicio en la nube.
 
 ### EDA (Exploratory Data Analysis)
 
