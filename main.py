@@ -25,7 +25,7 @@ modelo_render = pd.read_parquet('Data/modelo_render.parquet')
 def read_root():
     message = """
     <div style="text-align: center; font-size: 24px; margin-bottom: 20px;">
-        ¡Bienvenido al proyecto N°1 de HENRY LABS!
+        ¡Bienvenido a mi primer proyecto individual!
     </div>
     <div style="text-align: center; font-size: 18px; margin-bottom: 40px;">
         En este proyecto vamos a ver un sistema de recomendación de videojuegos para usuarios de Steam (MVP)
@@ -40,7 +40,7 @@ def read_root():
 
 @app.get("/redirect", include_in_schema=False)
 def redirect_to_docs():
-    link = "/docs"
+    link = "https://henry-mlops-pi1-milagros.onrender.com/docs"
     raise HTTPException(status_code=302, detail="Redirecting", headers={"Location": link})
 
 
