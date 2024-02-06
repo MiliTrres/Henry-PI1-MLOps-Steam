@@ -285,8 +285,8 @@ def DeveloperReviewsAnalysis(desarrollador):
 
 
 # Sistema de Recomendación /recommend_games
-@app.get("/recommend_games")
-def recommend_games(id: int):
+@app.get("/games_recommendation")
+def games_recommendation(id: int):
     '''
     Función que recibe como parametro el ID de un juego y retorna una lista con los 5 juegos más similares.
 
