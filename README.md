@@ -53,15 +53,31 @@ se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el
 ![Beautiful Soup](https://img.shields.io/badge/Beautiful%20Soup-333333?style=flat&logo=beautiful)
 ![TextBlob](https://img.shields.io/badge/TextBlob-333333?style=flat&logo=textblob)
 
-La ingeniería de características se centró en el análisis de sentimientos de los comentarios de los usuarios, usando la librería TextBlob. 
+Esta etapa se centró en el análisis de sentimientos de los comentarios de los usuarios, usando la librería TextBlob. 
+En en dataset user_reviews se agrego una columna llamada `sentiment_analysis`, donde se categorizan las reseñas de los usuarios en positiva, neutral o negativa.
+Siendo: 
+  - 0: Negativa
+  - 1: Neutra
+  - 2: Positiva
 
 Además, se prepararon los conjuntos de datos necesarios para optimizar las consultas y funcionalidades del servicio en la nube.
 
-### EDA (Exploratory Data Analysis)
+> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [FeatureEngineering](/FeatureEngineering.ipynb)
 
-Se llevó a cabo un análisis exploratorio de los tres conjuntos de datos después del proceso de ETL. Esto permitió visualizar mejor las variables categóricas y numéricas, identificando las que son esenciales para el modelo de recomendación.
+### EDA (Exploratory Data Analysis)
+![WordCloud](https://img.shields.io/badge/WordCloud-333333?style=flat&logo=WordCloud)
+![SciPy](https://img.shields.io/badge/SciPy-333333?style=flat&logo=WordCloud)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-333333?style=flat&logo=WordCloud)
+![Seaborn](https://img.shields.io/badge/Seaborn-333333?style=flat&logo=Seaborn)
+
+Se llevó a cabo un análisis exploratorio de los tres conjuntos de datos después del proceso de ETL, analizamos el porcentaje de valores nulos, distribución y outliers de los precios de los items, usuarios con más horas jugadas, TOP 5 de los mejores desarrolladores,etc.
+Esto permitió visualizar mejor las variables categóricas y numéricas, identificando las que son esenciales para el modelo de recomendación.
+
+> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [EDA](/EDA.ipynb)
 
 ### Desarrollo de la API
+![FastAPI](https://img.shields.io/badge/-FastAPI-333333?style=flat&logo=fastapi)
+![Render](https://img.shields.io/badge/-REnder-333333?style=flat&logo=render)
 
 Se construyó una API mediante el uso del framework FastAPI. Esta API ofrece varias funciones, estas son: 
 
