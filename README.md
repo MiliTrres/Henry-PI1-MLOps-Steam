@@ -10,7 +10,7 @@
 
 ## Introducción
 
-Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de un Data Engineer y un Data Scientist. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
+Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de **un Data Engineer + un Data Scientist**. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
 
 ## Descripción del proyecto
 
@@ -39,7 +39,10 @@ Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 ![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
 ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
 
-En esta fase, se realizo el Notebook ´ETL´. Se extrajeron datos de los DataFrames iniciales para familiarizarse con ellos y comenzar la limpieza de datos. Los datos limpios se almacenaron en formato CSV.
+En esta fase, se llevo a cabo la ingesta de datos. Se convirtieron los datasets en DataFrames para poder trabajar de manera optima, se desanidaron columnas anidadas, se trasnformaron y limpiaron datos. Para ser más precisos, en esta etapa se realizaron tareas como las siguientes: Análisis y limpieza de valores nulos,
+se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el nombre de otras, se transformaron los tipos de datos, etc. 
+
+> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [ETL] (ETL.ipynb)
 
 ### Feature Engineering
 
