@@ -24,47 +24,67 @@ modelo_render = pd.read_parquet('Data/modelo_render.parquet')
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
 def read_root():
     message = """
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Individual I - Milagros Torres</title>
-
-
-</head>
-
-<body>
-
-    
-
-    <div class="textlanding">
-        <div class="center-content">
-            <p style="display:inline; font-size: 45px">Milagros Torres</p>
-            <hr style="width: 100px; height: 1px; border:none;color:#494949;background-color:#494949;">
-            <div class="button-container">
-                <ul class="list-inline social-buttons">
-                    <li class="list-inline-item social-buttons">
-                        <a href="https://github.com/MiliTrres" target="_blank">
-                            <i class="fab fa-github" style="color: white"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item social-buttons">
-                        <a href="https://www.linkedin.com/in/milagros-torres-384108272/" target="_blank">
-                            <i class="fab fa-linkedin" style="color: white"></i>
-                        </a>
-                    </li>
-                </ul>
+    <html>
+        <head>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #F5EEE6; /* Rosa pastel */
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                }
+                .container {
+                    text-align: center;
+                    color: #5C5470; /* Gris oscuro */
+                    max-width: 600px;
+                }
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                }
+                .welcome {
+                    font-size: 36px;
+                    font-weight: bold;
+                    margin: 20px 0 10px;
+                    border-bottom: 2px solid #5C5470; /* Línea de guiones bajos */
+                    padding-bottom: 10px;
+                }
+                .intro {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .button-container {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .button {
+                    font-size: 16px;
+                    padding: 10px 20px;
+                    background-color: #4caf50; /* Verde para resaltar el botón */
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="welcome">MILAGROS TORRES</div>
+                <div class="intro">
+                    <h2> ¡Bienvenido a mi primer proyecto individual! <h2><br>
+                    <p>En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning,
+                    creando un MVP para ser consumido a través de FastApi. En el siguiente link podrás hacer consultas sobre la plataforma de juegos Steam Games: <br>
+                    <a href="https://henry-mlops-pi1-milagros.onrender.com/docs">https://henry-mlops-pi1-milagros.onrender.com/docs</a> <p><br>
+                    <br>
+                    El desarrollo de este proyecto lo encuentras en mi repositorio de GitHub: <br> <a href="https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git">https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git</a> 
+                </div>
             </div>
-            <br>
-            <p style="color: grey">Bienvenidos a mi primer proyecto individual.<br>
-            En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning, 
-            creando un MVP para ser consumido a través de FastApi. En el siguiente link podrás hacer consultas sobre la plataforma de juegos Steam Games:</p> 
-            <a href="https://henry-mlops-pi1-milagros.onrender.com/docs#/" target="_blank">            
-        </div>
- 
-</body>
-</html>
+            
+        </body>
+    </html>
     """
     return HTMLResponse(content=message)
 
