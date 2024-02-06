@@ -75,10 +75,11 @@ def read_root():
                 <div class="welcome">MILAGROS TORRES</div>
                 <div class="intro">
                     <h2> ¡Bienvenido a mi primer proyecto individual! <h2><br>
-                    <h4>En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning,
+                    <h3>En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning,
                     creando un MVP para ser consumido a través de FastApi. En el siguiente link podrás hacer consultas sobre la plataforma de juegos Steam Games: <br>
                     <a href="https://henry-mlops-pi1-milagros.onrender.com/docs">https://henry-mlops-pi1-milagros.onrender.com/docs</a> <br>
-                    El desarrollo de este proyecto lo encuentras en mi repositorio de GitHub: <br> <a href="https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git">https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git</a> <h4>
+                    <br>
+                    El desarrollo de este proyecto lo encuentras en mi repositorio de GitHub: <br> <a href="https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git">https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git</a> <h3>
                 </div>
             </div>
             
