@@ -77,23 +77,33 @@ Esto permitió visualizar mejor las variables categóricas y numéricas, identif
 
 ### Desarrollo de la API
 ![FastAPI](https://img.shields.io/badge/-FastAPI-333333?style=flat&logo=fastapi)
-![Render](https://img.shields.io/badge/-REnder-333333?style=flat&logo=render)
+![Render](https://img.shields.io/badge/-Render-333333?style=flat&logo=render)
 
 Se construyó una API mediante el uso del framework FastAPI. Esta API ofrece varias funciones, estas son: 
 
-- **PlayTimeGenre:** Esta función recibe como parametro un genero de juego y retorna el año con más horas jugadas para ese genero.
+- **Developer:** Función que recibe como parametro el nombre de una empresa desarrolladora y retorna la cantidad de items y porcentaje de contenido gratuito por año según la empresa dada. 
 
-- **UserForGenre:** Esta función recibe como parametro un genero de juego y retorna el usuario con más horas jugadas para dicho genero, y una lista de aculuación de horas jugadas para dicho genero.
+- **UserData:** Función que recibe como parametro un identificador uncio de usuario y retorna la cantidad de dinero gastado por el mismo, el porcentaje de recomendación y cantidad de items. 
 
-- **UsersRecommend:** Esta función recibe como parametro un año y retorna el top 3 de los juegos más recomendados para dicho año.
+- **UserForGenre:** Función que recibe como parametro un genero de juego y retorna el usuario con más horas jugadas para dicho genero y una acumulación de horas jugadas por año de lanzamiento.
 
-- **UsersNotRecommend:** Esta función recibe como parametro un año y retorna el top 3 de los juegos menos recomendados para dicho año.
+- **BestDeveloperYear:** Función que recibe como parametro un año y retorna el TOP 3 de desarrolladores con más recomendaciones para el año dado.
 
-- **SentimentAnalysis:** Esta función recibe como parametro un año y retorna una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
+- **DeveloperReviewsAnalysis:** Función que recibe como parametro el nombre de una empresa desarrolladora y retorna la cantidad de reseñas positivas y negativas, descartando las neutras.
 
 - **GameRecommendation:** Esta función recibe como parametro el id de un juego y retorna una lista de los 5 juegos recomendados similares al ingreso.
 
+> Para poder interactuar con las funciones, ingrese al siguiente link: [Deploy en Render](https://henry-mlops-pi1-milagros.onrender.com
+)
+
 ### Modelamiento (Desarrollo de modelos de aprendizaje automático)
+![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
+![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
+![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
+![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
+![Scikitlearn](https://img.shields.io/badge/-Scikitlearn-333333?style=flat&logo=scikitlearn)
+
+- Item-Item: Se toma un ítem, se encuentran items similares en base a los TAGs que tenemos de informacion y se devuelve 5 items similares.
 
 Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante de etapas anteriores y creamos otro que contiene:
 
@@ -101,8 +111,4 @@ Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante d
 - **app_name**: Nombre del juego.
 - **tags**: Etiquetas del juego.
 
-
-### Despliegue
-
-La API se desplegó en Render.com y está disponible en [https://deploy-p1-milagros.onrender.com/docs](https://deploy-p1-milagros.onrender.com/docs).
 
