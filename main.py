@@ -30,10 +30,16 @@ def read_root():
                 body {
                     font-family: 'Arial', sans-serif;
                     background-color: #FFE7E7; /* Rosa pastel */
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
                 }
                 .container {
                     text-align: center;
                     color: #5C5470; /* Gris oscuro */
+                    max-width: 600px;
                 }
                 .logo {
                     width: 100px;
@@ -42,7 +48,9 @@ def read_root():
                 .welcome {
                     font-size: 36px;
                     font-weight: bold;
-                    margin-bottom: 10px;
+                    margin: 20px 0 10px;
+                    border-bottom: 2px solid #5C5470; /* Línea de guiones bajos */
+                    padding-bottom: 10px;
                 }
                 .intro {
                     font-size: 18px;
@@ -77,6 +85,7 @@ def read_root():
     </html>
     """
     return HTMLResponse(content=message)
+
 
 
 @app.get("/redirect", include_in_schema=False)
