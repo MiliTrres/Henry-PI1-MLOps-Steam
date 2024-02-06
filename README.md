@@ -16,19 +16,19 @@ Este proyecto representa el Producto Individual 1 en el campo de Machine Learnin
 
 El proyecto busca solucionar dos problemas esenciales en la plataforma Steam:
 
-**Análisis de Sentimientos de Usuarios:** El primer desafío consiste en analizar y clasificar los comentarios de los usuarios. Para ello, se emplea la librería TextBlob, una herramienta de Procesamiento del Lenguaje Natural (NLP). TextBlob determina la polaridad del sentimiento en cada comentario y lo clasifica como negativo, neutral o positivo.
+**Análisis de Sentimientos de Usuarios:** El primer desafío consiste en analizar y clasificar los comentarios de los usuarios. Para ello, se emplea la librería TextBlob, una herramienta de *Procesamiento del Lenguaje Natural* (NLP). TextBlob determina la polaridad del sentimiento en cada comentario y lo clasifica como negativo, neutral o positivo.
 
-**Sistema de Recomendación de Juegos:** El segundo desafío, radica en construir un sistema de recomendación de videojuegos. Este sistema proporciona recomendaciones de juegos a los usuarios basándose en sus preferencias y comportamientos anteriores.
+**Sistema de Recomendación de Juegos:** El segundo desafío, radica en construir un *Sistema de Recomendación de Videojuegos*. Este sistema proporciona recomendaciones de juegos a los usuarios basándose en sus preferencias y comportamientos anteriores.
 
-## Datos
+## Datasets
 
 Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 
-**output_steam_games.json**: Contiene información sobre los juegos; el nombre, el editor, el desarrollador, los precios y las etiquetas.
+`**output_steam_games.json**`: Contiene información sobre los juegos; el nombre, el editor, el desarrollador, los precios y las etiquetas.
 
-**australian_users_items.json**: Contiene información sobre los juegos utilizados por los usuarios y el tiempo que cada usuario pasa en cada juego.
+`**australian_users_items.json**`: Contiene información sobre los juegos utilizados por los usuarios y el tiempo que cada usuario pasa en cada juego.
 
-**australian_users_reviews.json**: Contiene los comentarios que los usuarios realizaron sobre los juegos que usan, así como recomendaciones o críticas sobre esos juegos, ID del usuario y su URL.
+`**australian_users_reviews.json**`: Contiene los comentarios que los usuarios realizaron sobre los juegos que usan, así como recomendaciones o críticas sobre esos juegos, ID del usuario y su URL.
 
 ## Tareas realizadas
 
