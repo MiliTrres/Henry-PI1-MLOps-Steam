@@ -131,23 +131,6 @@ def Developer(desarrollador: str):
         'porcentaje_gratis_por_anio': porcentaje_gratuito.to_dict()
     }
 
-@app.get("/developer/{desarrollador}",
-                    description=
-                    """ <font color="black">
-                    INSTRUCCIONES<br>
-                    1. Haga clik en "Try it out".<br>
-                    2. Ingrese el nombre de una empresa desarrolladora para obtener la cantidad de items y porcentaje de contenido gratuito por año.  <br>
-                    3. Scrollear a "Response body" para ver el resultado.
-                    </font>"""
-                    , tags=['Consultas generales'])
-async def get_developer(desarrollador: str):
-    try:
-        
-        parquet_path = 'Data/developer.parquet'
-        
-        return Developer(desarrollador)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error al procesar la solicitud: {str(e)}")
 
     
 # Endpoint /userdata 
@@ -187,23 +170,7 @@ def UserData(user_id: str):
     }
 
 
-@app.get("/userdata/{user_id}",
-                    description=
-                    """ <font color="black">
-                    INSTRUCCIONES<br>
-                    1. Haga clik en "Try it out".<br>
-                    2. Ingrese un identificador unico de usuario para obtener el dinero gastado, los items comprados y el porcentaje de recomendación del mismo.  <br>
-                    3. Scrollear a "Response body" para ver el resultado.
-                    </font>"""
-                    , tags=['Consultas generales'])
-async def get_user_id(user_id: str):
-    try:
-        parquet_path2 = 'Data/userdata.parquet'
-        
-        result = UserData(user_id)
-        return JSONResponse(content=result)
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+
 
 # Endpoint /userforgenre 
 @app.get("/userforgenre")
@@ -242,22 +209,7 @@ def UserForGenre(genre: str):
         "Usuario con más horas jugadas para género " + genre: max_playtime_user, "Horas jugadas": playtime_list
         }
 
-@app.get("/userforgenre/{genre}",
-                    description=
-                    """ <font color="black">
-                    INSTRUCCIONES<br>
-                    1. Haga clik en "Try it out".<br>
-                    2. Ingrese un genero de juego para obtener el usuario con más horas jugadas y la acumulación de horas jugadas por año. <br>
-                    3. Scrollear a "Response body" para ver el resultado.
-                    </font>"""
-                    , tags=['Consultas generales'])
-async def get_userforgenre(genre: str):
-    try:
-        parquet_path3 = 'Data/userforgenre.parquet'
-        
-        return JSONResponse(content=result)
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+
     
 #Endpoint /bestdeveloperyear
 @app.get("/bestdeveloperyear")  
@@ -296,23 +248,7 @@ def BestDeveloperYear(year: int):
 
     return result
 
-@app.get("/bestdeveloperyear/{year}",
-                    description=
-                    """ <font color="black">
-                    INSTRUCCIONES<br>
-                    1. Haga clik en "Try it out".<br>
-                    2. Ingrese un año para obtener el TOP 3 de desarrolladores con juegos más recomendados por usuarios para el año ingresado <br>
-                    3. Scrollear a "Response body" para ver el resultado.
-                    </font>"""
-                    , tags=['Consultas generales'])
-async def getbestdeveloperyear(year: int):
-    try:
-        parquet_path4 = "Dataset/dataset_endpoint_4.parquet"
-        
-        result = BestDeveloperYear(year)
-        return JSONResponse(content=result)
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
+
     
 #Endpoint /developerreviewsanalysis
 @app.get("/developerreviewsanalysis")
@@ -345,24 +281,6 @@ def DeveloperReviewsAnalysis(desarrollador):
         desarrollador: [f"Negative = {negativo}", f"Positive = {positivo}"]
     }
 
-@app.get("/developerreviewsanalysis/{desarrollador}",
-                    description=
-                    """ <font color="black">
-                    INSTRUCCIONES<br>
-                    1. Haga clik en "Try it out".<br>
-                    2. Ingrese el nombre de la empresa desarrolladora para obtener la cantidad de reseñas positivas y negativas. <br>
-                    3. Scrollear a "Response body" para ver cuantas reseñas positivas y negativas tuvo el desarrollador.
-                    </font>"""
-                    , tags=['Consultas generales'])
-async def getdeveloperreviewsanalysis(desarrollador: str):
-    try:
-        parquet_path5 = 'Data/developer_reviews.parquet'
-        
-        
-        result = DeveloperReviewsAnalysis(desarrollador)
-        return JSONResponse(content=result)
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
     
 
 
@@ -418,18 +336,5 @@ def recommend_games(id: int):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/recommendgames/{id}",
-         description=
-         """ <font color="black">
-         INSTRUCCIONES<br>
-         1. Haga clik en "Try it out".<br>
-         2. Ingrese el ID de un juego para obtener el TOP 5 de juegos más similares. <br>
-         3. Scrollear a "Response body" para ver los juegos recomendados similares al ingresado.
-         </font>""", tags=['Sistema de recomendación'])
-async def recommendgames(id: int):
-    try:
-        return JSONResponse(content={"Juegos_similares": recommend_games(id)})
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
 
 
