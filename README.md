@@ -10,11 +10,11 @@
 
 ## Introducción
 
-Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de **un Data Engineer + un Data Scientist**. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
+Este proyecto representa el Proyecto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de **un Data Engineer + un Data Scientist**. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
 
 ## Descripción del proyecto
 
-El proyecto busca solucionar dos problemas esenciales en la plataforma Steam:
+El proyecto busca superar con exito dos desafios esenciales:
 
 **Análisis de Sentimientos de Usuarios:** El primer desafío consiste en analizar y clasificar los comentarios de los usuarios. Para ello, se emplea la librería TextBlob, una herramienta de *Procesamiento del Lenguaje Natural* (NLP). TextBlob determina la polaridad del sentimiento en cada comentario y lo clasifica como negativo, neutral o positivo.
 
@@ -72,8 +72,26 @@ Además, se prepararon los conjuntos de datos necesarios para optimizar las cons
 
 Se llevó a cabo un análisis exploratorio de los tres conjuntos de datos después del proceso de ETL, analizamos el porcentaje de valores nulos, distribución y outliers de los precios de los items, usuarios con más horas jugadas, TOP 5 de los mejores desarrolladores,etc.
 Esto permitió visualizar mejor las variables categóricas y numéricas, identificando las que son esenciales para el modelo de recomendación.
+También, se prepararon los datasets necesarios para cada una de las funciones.
 
 > Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [EDA](/EDA.ipynb)
+
+### Modelamiento (Desarrollo de modelos de aprendizaje automático)
+![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
+![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
+![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
+![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
+![Scikitlearn](https://img.shields.io/badge/-Scikitlearn-333333?style=flat&logo=scikitlearn)
+
+En esta etapa llevamos a cabo nuestro sistema de recomendación, con una relación item-item. Es decir, se toma un item y en base a que tan similar es un item del resto, se recomiendan similares, aplicando la similitud del coseno.
+
+- Item-Item: Se toma un ítem, se encuentran items similares en base a los TAGs que tenemos de informacion y se devuelve 5 items similares.
+
+Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante de etapas anteriores y creamos otro que contiene:
+
+- **id**: ID del juego.
+- **app_name**: Nombre del juego.
+- **tags**: Etiquetas del juego.
 
 ### Desarrollo de la API
 ![FastAPI](https://img.shields.io/badge/-FastAPI-333333?style=flat&logo=fastapi)
@@ -96,19 +114,5 @@ Se construyó una API mediante el uso del framework FastAPI. Esta API ofrece var
 > Para poder interactuar con las funciones, ingrese al siguiente link: [Deploy en Render](https://henry-mlops-pi1-milagros.onrender.com
 )
 
-### Modelamiento (Desarrollo de modelos de aprendizaje automático)
-![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
-![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
-![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
-![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
-![Scikitlearn](https://img.shields.io/badge/-Scikitlearn-333333?style=flat&logo=scikitlearn)
-
-- Item-Item: Se toma un ítem, se encuentran items similares en base a los TAGs que tenemos de informacion y se devuelve 5 items similares.
-
-Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante de etapas anteriores y creamos otro que contiene:
-
-- **id**: ID del juego.
-- **app_name**: Nombre del juego.
-- **tags**: Etiquetas del juego.
 
 
