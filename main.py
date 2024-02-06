@@ -24,19 +24,60 @@ modelo_render = pd.read_parquet('Data/modelo_render.parquet')
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
 def read_root():
     message = """
-    <div style="text-align: center; font-size: 24px; margin-bottom: 20px;">
-        ¡Bienvenido a mi primer proyecto individual!
-    </div>
-    <div style="text-align: center; font-size: 18px; margin-bottom: 40px;">
-        En este proyecto vamos a ver un sistema de recomendación de videojuegos para usuarios de Steam (MVP)
-    </div>
-    <div style="text-align: center;">
-        <form action='/redirect' style="display: inline-block;">
-            <input type='submit' value='Comencemos' style="font-size: 16px;">
-        </form>
-    </div>
+    <html>
+        <head>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #FFE7E7; /* Rosa pastel */
+                }
+                .container {
+                    text-align: center;
+                    color: #5C5470; /* Gris oscuro */
+                }
+                .logo {
+                    width: 100px;
+                    height: 100px;
+                }
+                .welcome {
+                    font-size: 36px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .intro {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                .button-container {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .button {
+                    font-size: 16px;
+                    padding: 10px 20px;
+                    background-color: #4caf50; /* Verde para resaltar el botón */
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="welcome">MILAGROS TORRES</div>
+                <div class="intro">
+                    ¡Bienvenido a mi primer proyecto individual!<br>
+                    En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning,
+                    creando un MVP para ser consumido a través de FastApi. En el siguiente link podrás hacer consultas sobre la plataforma de juegos Steam Games:
+                    <a href="https://henry-mlops-pi1-milagros.onrender.com/docs">https://henry-mlops-pi1-milagros.onrender.com/docs</a>
+                </div>
+            </div>
+            <div>El desarrollo de este proyecto lo encuentras en mi repositorio de GitHub: <a href="https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git">https://github.com/MiliTrres/Henry-PI1-MLOps-Steam.git</a></div>
+        </body>
+    </html>
     """
     return HTMLResponse(content=message)
+
 
 @app.get("/redirect", include_in_schema=False)
 def redirect_to_docs():
