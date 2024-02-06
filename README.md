@@ -8,6 +8,7 @@
 
 <p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/Why%20Is%20There%20A%20Shortage%20Of%20MLOps%20Engineers_.jpg height=300><p>
 
+## Introducción
 
 Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de un Data Engineer y un Data Scientist. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
 
@@ -23,7 +24,7 @@ El proyecto busca solucionar dos problemas esenciales en la plataforma Steam:
 
 Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 
-**output_steam_games.json**: Contiene información sobre los juegos, como el nombre, el editor, el desarrollador, los precios y las etiquetas.
+**output_steam_games.json**: Contiene información sobre los juegos; el nombre, el editor, el desarrollador, los precios y las etiquetas.
 
 **australian_users_items.json**: Contiene información sobre los juegos utilizados por los usuarios y el tiempo que cada usuario pasa en cada juego.
 
@@ -32,8 +33,13 @@ Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 ## Tareas realizadas
 
 ### ETL (Extract, Transform and Load)
+![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
+![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
+![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
+![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
+![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
 
-En esta fase, se realizo el Notebook ETL. Se extrajeron datos de los DataFrames iniciales para familiarizarse con ellos y comenzar la limpieza de datos. Los datos limpios se almacenaron en formato CSV.
+En esta fase, se realizo el Notebook ´ETL´. Se extrajeron datos de los DataFrames iniciales para familiarizarse con ellos y comenzar la limpieza de datos. Los datos limpios se almacenaron en formato CSV.
 
 ### Feature Engineering
 
