@@ -74,7 +74,7 @@ def read_root():
             <div class="container">
                 <div class="welcome">MILAGROS TORRES</div>
                 <div class="intro">
-                    ¡Bienvenido a mi primer proyecto individual!<br>
+                    <h2> ¡Bienvenido a mi primer proyecto individual! <h2><br>
                     En este proyecto llevo a cabo el papel de un Data Engineer e implemento mis conocimientos en Machine Learning,
                     creando un MVP para ser consumido a través de FastApi. En el siguiente link podrás hacer consultas sobre la plataforma de juegos Steam Games: <br>
                     <a href="https://henry-mlops-pi1-milagros.onrender.com/docs">https://henry-mlops-pi1-milagros.onrender.com/docs</a> <br>
