@@ -1,12 +1,15 @@
 <p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/68747470733a2f2f643331757a386c77666d796e38672e636c6f756466726f6e742e6e65742f4173736574732f6c6f676f2d68656e72792d77686974652d6c672e706e67.png><p>
 
-![img-MLOps](Henry-PI1-MLOps-Steam\Img\Why Is There A Shortage Of MLOps Engineers_.jpg)
-
-# PROYECTO INDIVIDUAL - 1:
-# Recomendación de Juegos Steam con MLOps
 
 
-Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un MLOps Engineer, una figura que combina las habilidades de un Data Engineer y un Data Scientist. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
+# <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
+
+# <h1 align=center>**`Machine Learning Operations (MLOps)`**</h1>
+
+<p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/Why%20Is%20There%20A%20Shortage%20Of%20MLOps%20Engineers_.jpg height=300><p>
+
+
+Este proyecto representa el Producto Individual 1 en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de un Data Engineer y un Data Scientist. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
 
 ## Descripción del proyecto
 
