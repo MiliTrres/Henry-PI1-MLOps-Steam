@@ -42,7 +42,7 @@ Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 En esta fase, se llevo a cabo la ingesta de datos. Se convirtieron los datasets en DataFrames para poder trabajar de manera optima, se desanidaron columnas anidadas, se trasnformaron y limpiaron datos. Para ser más precisos, en esta etapa se realizaron tareas como las siguientes: Análisis y limpieza de valores nulos,
 se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el nombre de otras, se transformaron los tipos de datos, etc. 
 
-> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [ETL] (ETL.ipynb)
+> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [ETL] (/ETL.ipynb)
 
 ### Feature Engineering
 
