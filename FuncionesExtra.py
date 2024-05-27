@@ -24,7 +24,8 @@ def tamanio_datsets(diccionario):
     Args:
         diccionario (dict): El diccionario que contiene los DataFrames a analizar.
     
-    
+    Returns:
+        str: El nombre del DataFrame y su tamaño.
 
     '''
     for nombre, dataframe in diccionario.items():
