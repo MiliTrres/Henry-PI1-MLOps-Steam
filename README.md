@@ -6,7 +6,7 @@
 
 # <h1 align=center>**`Machine Learning Operations (MLOps)`**</h1>
 
-<p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/Why%20Is%20There%20A%20Shortage%20Of%20MLOps%20Engineers_.jpg height=300><p>
+<p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/Steam.webp height=300><p>
 
 ## Introducción
 
