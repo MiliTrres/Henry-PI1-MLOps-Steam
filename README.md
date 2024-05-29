@@ -95,6 +95,8 @@ Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante d
 - **app_name**: Nombre del juego.
 - **tags**: Etiquetas del juego.
 
+> Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [Modelado](/ModeloRecomendacion.ipynb)
+
 ## *Desarrollo de la API*
 ![FastAPI](https://img.shields.io/badge/-FastAPI-333333?style=flat&logo=fastapi)
 ![Render](https://img.shields.io/badge/-Render-333333?style=flat&logo=render)
