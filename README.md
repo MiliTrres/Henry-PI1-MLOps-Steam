@@ -8,11 +8,13 @@
 
 <p align=center><img src=https://github.com/MiliTrres/Henry-PI1-MLOps-Steam/blob/main/Img/Steam.webp><p>
 
-## Introducción
+# *Introducción*
 
-Este proyecto representa el proyecto individual número uno en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de ***un Data Engineer + un Data Scientist***. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
+Steam, al igual que otras plataformas, es una plataforma de videojuegos que permite activar tu sesión, descargar varios títulos y jugar a multitud de juegos en tu pc, pensado para aportar una forma más rápida en nuestro país del uso de una cuenta de Steam como ventana a otro mundo cargado de juegos online y descargables.
 
-## Descripción del proyecto
+# *Descripción del proyecto*
+
+Este proyecto representa el proyecto individual número uno en el campo de Machine Learning, desarrollado dentro del bootcamp de Henry. Su propósito es simular el rol de un ***MLOps Engineer***, una figura que combina las habilidades de ***un Data Engineer*** + ***un Data Scientist***. En esta simulación, el MLOps Engineer trabaja para la conocida plataforma de videojuegos, Steam. El proyecto se centra en abordar un desafío empresarial clave: la creación de un Producto Mínimo Viable (MVP) que incorpora tanto una API de implementación, como un modelo de Machine Learning.
 
 El proyecto busca superar con exito dos desafios esenciales:
 
@@ -20,31 +22,31 @@ El proyecto busca superar con exito dos desafios esenciales:
 
 **Sistema de Recomendación de Juegos:** El segundo desafío, radica en construir un *Sistema de Recomendación de Videojuegos*. Este sistema proporciona recomendaciones de juegos a los usuarios basándose en sus preferencias y comportamientos anteriores.
 
-## Datasets
+# *Fuente de datos*
 
 Para desarrollar el proyecto se utilizaron tres archivos en formato JSON:
 
-`**output_steam_games.json**`: Contiene información sobre los juegos; el nombre, el editor, el desarrollador, los precios y las etiquetas.
+`output_steam_games.json`: Contiene información sobre los juegos; el nombre, el editor, el desarrollador, los precios y las etiquetas.
 
-`**australian_users_items.json**`: Contiene información sobre los juegos utilizados por los usuarios y el tiempo que cada usuario pasa en cada juego.
+`australian_users_items.json`: Contiene información sobre los juegos utilizados por los usuarios y el tiempo que cada usuario pasa en cada juego.
 
-`**australian_users_reviews.json**`: Contiene los comentarios que los usuarios realizaron sobre los juegos que usan, así como recomendaciones o críticas sobre esos juegos, ID del usuario y su URL.
+`australian_users_reviews.json`: Contiene los comentarios que los usuarios realizaron sobre los juegos que usan, así como recomendaciones o críticas sobre esos juegos, ID del usuario y su URL.
 
-## Tareas realizadas
+# *Tareas realizadas*
 
-### ETL (Extract, Transform and Load)
+## *ETL (Extract, Transform and Load)*
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
 ![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
 ![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
 ![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
 
-En esta fase, se llevo a cabo la ingesta de datos. Se convirtieron los datasets en DataFrames para poder trabajar de manera optima, se desanidaron columnas anidadas, se trasnformaron y limpiaron datos. Para ser más precisos, en esta etapa se realizaron tareas como las siguientes: Análisis y limpieza de valores nulos,
+En esta etapa, se llevo a cabo la ingesta de datos. Se convirtieron los datasets en DataFrames para poder trabajar de manera optima, se desanidaron columnas anidadas, se trasnformaron y limpiaron datos. Para ser más precisos, en esta etapa se realizaron tareas como las siguientes: Análisis y limpieza de valores nulos,
 se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el nombre de otras, se transformaron los tipos de datos, etc. 
 
 > Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [ETL](/ETL.ipynb)
 
-### Feature Engineering
+## *Feature Engineering*
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
 ![Numpy](https://img.shields.io/badge/-Numpy-333333?style=flat&logo=numpy)
 ![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
@@ -54,7 +56,7 @@ se completaron datos faltantes, se eliminaron algunas columnas y se cambiaron el
 ![TextBlob](https://img.shields.io/badge/TextBlob-333333?style=flat&logo=textblob)
 
 Esta etapa se centró en el análisis de sentimientos de los comentarios de los usuarios, usando la librería TextBlob. 
-En en dataset user_reviews se agrego una columna llamada `sentiment_analysis`, donde se categorizan las reseñas de los usuarios en positiva, neutral o negativa.
+En el dataset **user_reviews** se agrego una columna llamada `sentiment_analysis`, donde se categorizan las reseñas de los usuarios en positiva, neutral o negativa.
 Siendo: 
   - 0: Negativa
   - 1: Neutra
@@ -64,7 +66,7 @@ Además, se prepararon los conjuntos de datos necesarios para optimizar las cons
 
 > Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [FeatureEngineering](/FeatureEngineering.ipynb)
 
-### EDA (Exploratory Data Analysis)
+## *EDA (Exploratory Data Analysis)*
 ![WordCloud](https://img.shields.io/badge/WordCloud-333333?style=flat&logo=WordCloud)
 ![SciPy](https://img.shields.io/badge/SciPy-333333?style=flat&logo=WordCloud)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-333333?style=flat&logo=WordCloud)
@@ -76,7 +78,7 @@ También, se prepararon los datasets necesarios para cada una de las funciones.
 
 > Para ver en detalle las tareas realizadas en esta etapa, ingrese al siguiente link: [EDA](/EDA.ipynb)
 
-### Modelamiento (Desarrollo de modelos de aprendizaje automático)
+## *Modelamiento (Desarrollo de modelos de aprendizaje automático)*
 ![VSCode](https://img.shields.io/badge/-VSCode-333333?style=flat&logo=visual-studio-code)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-333333?style=flat&logo=jupyter)
 ![Pandas](https://img.shields.io/badge/-Pandas-333333?style=flat&logo=pandas)
@@ -93,11 +95,11 @@ Para el desarrollo del Sistema de Recomendación, usamos el dataset resultante d
 - **app_name**: Nombre del juego.
 - **tags**: Etiquetas del juego.
 
-### Desarrollo de la API
+## *Desarrollo de la API*
 ![FastAPI](https://img.shields.io/badge/-FastAPI-333333?style=flat&logo=fastapi)
 ![Render](https://img.shields.io/badge/-Render-333333?style=flat&logo=render)
 
-Se construyó una API mediante el uso del framework FastAPI. Esta API ofrece varias funciones, estas son: 
+Se construyó una API mediante el uso del framework FastAPI. Esta API ofrece varias funciones: 
 
 - **Developer:** Función que recibe como parametro el nombre de una empresa desarrolladora y retorna la cantidad de items y porcentaje de contenido gratuito por año según la empresa dada. 
 
